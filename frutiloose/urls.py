@@ -19,7 +19,9 @@ from django.urls import path, include
 from frutiloose.settings import ENV_TYPE
 
 api_url_patterns = (
-    []
+    [
+        path('fruit/v1/', include('fruit.api.v1.urls'))
+    ]
 )
 
 urlpatterns = [
